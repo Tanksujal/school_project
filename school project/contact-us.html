@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kelavani Mandal - Dhasa</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta name="csrf-token" content="yEJBtYQ2gKZPFzo34FR0eX84T30OpmdtXRCWYFvR">
+
+    <!-- Favicon -->
+    <link href="./frontTheme/img/logo_main-removebg-preview.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https:/    /fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="./frontTheme/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="./frontTheme/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="./frontTheme/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./frontTheme/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="./frontTheme/css/style.css" rel="stylesheet">
+
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- toastr start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <!-- toastr end -->
+
+    <!-- Sweet Alert --->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <!-- Sweet Alert  End--->
+    <style type="text/css">
+        .admission-inquiry label {
+            margin-bottom: 0px;
+            color: #3a3a3a;
+            font-weight: bold;
+        }
+
+        .admission-inquiry .modal-dialog {
+            max-width: 650px;
+        }
+
+        .admission-inquiry .modal-dialog .modal-content {
+            background-color: rgba(255, 255, 255, 0.7);
+            background-image: url('./frontTheme/img/hvc-logo-light.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .highlighter a {
+            color: black;
+        }
+
+        .event-registration {
+            border-radius: 10px;
+            padding: 30px;
+            min-height: 380px
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
+        <i class="fa fa-cog fa-2x text-primary position-absolute top-50 start-50 translate-middle"></i>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary wow fadeIn header-top" data-wow-delay="0.1s">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row gx-0 align-items-center d-none d-lg-flex">
+                    <div class="col-lg-5 text-start">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a class="small text-white l-h-24" a href="tel:+91-99781-55555">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.4097 13C19.1897 13 18.9597 12.93 18.7397 12.88C18.2945 12.7805 17.8568 12.6501 17.4297 12.49C16.9658 12.3212 16.4558 12.33 15.998 12.5146C15.5402 12.6992 15.1668 13.0466 14.9497 13.49L14.7297 13.95C13.7585 13.3992 12.8613 12.7271 12.0597 11.95C11.2825 11.1484 10.6105 10.2512 10.0597 9.28L10.5197 9.07C10.963 8.85292 11.3105 8.47953 11.4951 8.02169C11.6797 7.56385 11.6885 7.05391 11.5197 6.59C11.3609 6.15903 11.2306 5.71808 11.1297 5.27C11.0797 5.05 11.0397 4.82 11.0097 4.6C10.8882 3.89562 10.5193 3.25774 9.96931 2.80124C9.4193 2.34474 8.72438 2.09961 8.00968 2.11H4.99968C4.57693 2.10945 4.15883 2.19825 3.7728 2.37058C3.38677 2.54292 3.04152 2.7949 2.75968 3.11C2.472 3.43365 2.2578 3.81575 2.13179 4.23004C2.00577 4.64432 1.97094 5.08098 2.02968 5.51C2.57327 9.67214 4.47489 13.5387 7.43968 16.51C10.411 19.4748 14.2775 21.3764 18.4397 21.92C18.5695 21.9299 18.6999 21.9299 18.8297 21.92C19.5671 21.9211 20.2791 21.6505 20.8297 21.16C21.1448 20.8782 21.3968 20.5329 21.5691 20.1469C21.7414 19.7609 21.8302 19.3428 21.8297 18.92V15.92C21.8243 15.229 21.5805 14.5611 21.1396 14.0291C20.6987 13.4971 20.0876 13.1336 19.4097 13ZM19.8997 19C19.8994 19.1395 19.8698 19.2775 19.813 19.4049C19.7562 19.5324 19.6733 19.6465 19.5697 19.74C19.4601 19.8399 19.3297 19.9141 19.1878 19.9573C19.046 20.0006 18.8963 20.0117 18.7497 19.99C15.018 19.5026 11.5499 17.802 8.87968 15.15C6.20716 12.4775 4.49171 8.99737 3.99968 5.25C3.97796 5.10333 3.98912 4.95367 4.03236 4.81185C4.0756 4.67003 4.14983 4.5396 4.24968 4.43C4.3443 4.32515 4.46006 4.24154 4.58933 4.18466C4.7186 4.12778 4.85846 4.09892 4.99968 4.1H7.99968C8.23085 4.09435 8.45682 4.16898 8.63915 4.3112C8.82147 4.45341 8.94888 4.65442 8.99968 4.88C8.99968 5.15 9.08968 5.43 9.14968 5.7C9.26526 6.22386 9.419 6.73857 9.60968 7.24L8.20968 7.9C7.96905 8.01046 7.78204 8.21185 7.68968 8.46C7.58967 8.70346 7.58967 8.97654 7.68968 9.22C9.12888 12.3028 11.6069 14.7808 14.6897 16.22C14.9331 16.32 15.2062 16.32 15.4497 16.22C15.6978 16.1276 15.8992 15.9406 16.0097 15.7L16.6397 14.3C17.1556 14.4881 17.6834 14.6418 18.2197 14.76C18.4797 14.82 18.7597 14.87 19.0297 14.91C19.2553 14.9608 19.4563 15.0882 19.5985 15.2705C19.7407 15.4529 19.8153 15.6788 19.8097 15.91L19.8997 19ZM13.9997 2C13.7697 2 13.5297 2 13.2997 2C13.0345 2.02254 12.7891 2.14952 12.6175 2.353C12.4459 2.55647 12.3621 2.81978 12.3847 3.085C12.4072 3.35022 12.5342 3.59562 12.7377 3.76721C12.9412 3.93881 13.2045 4.02254 13.4697 4H13.9997C15.591 4 17.1171 4.63214 18.2423 5.75736C19.3675 6.88258 19.9997 8.4087 19.9997 10C19.9997 10.18 19.9997 10.35 19.9997 10.53C19.9775 10.7938 20.0609 11.0556 20.2314 11.2581C20.402 11.4606 20.6459 11.5871 20.9097 11.61H20.9897C21.24 11.611 21.4816 11.5181 21.6668 11.3496C21.8519 11.1811 21.9672 10.9493 21.9897 10.7C21.9897 10.47 21.9897 10.23 21.9897 10C21.9897 7.88 21.1482 5.84668 19.6501 4.34668C18.1519 2.84667 16.1197 2.00265 13.9997 2ZM15.9997 10C15.9997 10.2652 16.105 10.5196 16.2926 10.7071C16.4801 10.8946 16.7345 11 16.9997 11C17.2649 11 17.5193 10.8946 17.7068 10.7071C17.8943 10.5196 17.9997 10.2652 17.9997 10C17.9997 8.93913 17.5783 7.92172 16.8281 7.17157C16.078 6.42143 15.0605 6 13.9997 6C13.7345 6 13.4801 6.10536 13.2926 6.29289C13.105 6.48043 12.9997 6.73478 12.9997 7C12.9997 7.26522 13.105 7.51957 13.2926 7.70711C13.4801 7.89464 13.7345 8 13.9997 8C14.5301 8 15.0388 8.21071 15.4139 8.58579C15.789 8.96086 15.9997 9.46957 15.9997 10Z" fill="white"/>
+                            </svg> &nbsp;
+                            Helpline : 
+                        </a></li>
+                            <li class="breadcrumb-item"><a class="small text-white l-h-24" href="mailto:info@harivandanacollege.org ">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 8C20.7348 8 20.4804 8.10536 20.2929 8.29289C20.1054 8.48043 20 8.73478 20 9V17C20 17.2652 19.8946 17.5196 19.7071 17.7071C19.5196 17.8946 19.2652 18 19 18H5C4.73478 18 4.48043 17.8946 4.29289 17.7071C4.10536 17.5196 4 17.2652 4 17V7.41L9.88 13.29C10.4425 13.8518 11.205 14.1674 12 14.1674C12.795 14.1674 13.5575 13.8518 14.12 13.29L17.71 9.71C17.8983 9.5217 18.0041 9.2663 18.0041 9C18.0041 8.7337 17.8983 8.4783 17.71 8.29C17.5217 8.1017 17.2663 7.99591 17 7.99591C16.7337 7.99591 16.4783 8.1017 16.29 8.29L12.71 11.88C12.617 11.9737 12.5064 12.0481 12.3846 12.0989C12.2627 12.1497 12.132 12.1758 12 12.1758C11.868 12.1758 11.7373 12.1497 11.6154 12.0989C11.4936 12.0481 11.383 11.9737 11.29 11.88L5.41 6H13C13.2652 6 13.5196 5.89464 13.7071 5.70711C13.8946 5.51957 14 5.26522 14 5C14 4.73478 13.8946 4.48043 13.7071 4.29289C13.5196 4.10536 13.2652 4 13 4H5C4.20435 4 3.44129 4.31607 2.87868 4.87868C2.31607 5.44129 2 6.20435 2 7V17C2 17.7956 2.31607 18.5587 2.87868 19.1213C3.44129 19.6839 4.20435 20 5 20H19C19.7956 20 20.5587 19.6839 21.1213 19.1213C21.6839 18.5587 22 17.7956 22 17V9C22 8.73478 21.8946 8.48043 21.7071 8.29289C21.5196 8.10536 21.2652 8 21 8ZM17 6H21C21.2652 6 21.5196 5.89464 21.7071 5.70711C21.8946 5.51957 22 5.26522 22 5C22 4.73478 21.8946 4.48043 21.7071 4.29289C21.5196 4.10536 21.2652 4 21 4H17C16.7348 4 16.4804 4.10536 16.2929 4.29289C16.1054 4.48043 16 4.73478 16 5C16 5.26522 16.1054 5.51957 16.2929 5.70711C16.4804 5.89464 16.7348 6 17 6Z" fill="white"/>
+                            </svg> &nbsp;
+                            
+                        </a></li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-7">
+                        <nav class="navbar navbar-expand navbar_top pull-right w-auto">
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item nav-size dropdown">
+                                        <a class="nav-link l-h-24 dropdown-toggle">Student corner</a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item" href="">Sports Activity</a></li>
+                                            <li><a class="dropdown-item" href="">Academic Activity</a></li>
+                                            <li><a class="dropdown-item" href="">Students Feedback</a></li>
+                                            <li><a class="dropdown-item" href="">Scholarship</a></li>
+                                            <!-- <li><a class="dropdown-item" href="https://www.harivandanacollege.org/school-teachers-day">Teacher Day</a></li> -->
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item nav-size">
+                                        <span class="nav-link text-secondary">|</span>
+                                    </li>
+                                    <!-- <li class="nav-item nav-size">
+                                  <a class="nav-link l-h-24" href="https://www.harivandanacollege.org/sports-activity">Sports Activity</a>
+                                </li>
+                                <li class="nav-item nav-size">
+                                    <span class="nav-link text-secondary">|</span>
+                                </li>
+                                <li class="nav-item nav-size">
+                                  <a class="nav-link l-h-24" href="https://www.harivandanacollege.org/academic-activity">Academic Activity</a>
+                                </li>
+                                <li class="nav-item nav-size">
+                                    <span class="nav-link text-secondary">|</span>
+                                </li>
+                                <li class="nav-item nav-size">
+                                  <a class="nav-link l-h-24" href="#">Student corner</a>
+                                </li>
+                                <li class="nav-item nav-size">
+                                    <span class="nav-link text-secondary">|</span>
+                                </li> -->
+                                    <li class="nav-item nav-size">
+                                        <a class="nav-link l-h-24" href="">Press Release</a>
+                                    </li>
+                                    <!-- <li class="nav-item nav-size">
+                                    <span class="nav-link text-secondary">|</span>
+                                </li>
+                                <li class="nav-item nav-size">
+                                    <a class="nav-link l-h-24" href="#">Transportation Link</a>
+                                </li> -->
+                                    <li class="nav-item nav-size">
+                                        <span class="nav-link text-secondary">|</span>
+                                    </li>
+                                    <li class="nav-item nav-size">
+                                        <a class="nav-link l-h-24" href="#">Daily Update</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Brand & Contact Start -->
+    <div class="container-fluid py-1 wow fadeIn" data-wow-delay="0.1s"> 
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row align-items-center top-bar">
+                    <div class="col-lg-4 col-md-12 text-center text-lg-start">
+                        <a href="" class="navbar-brand m-0 p-0">
+                            <img src="./frontTheme/img/logo_main.jpeg" alt="Logo"  style="height: 120px;">
+                    </a>
+                    </div>
+                    <div class="col-lg-8 col-md-7 d-none d-lg-block text-end">
+                        <div class="pull-right">
+                            <div class="pull-left">
+                                <button class="btn btn-primary fw-700 fs-14 l-h-24" id="model">ADMISSION</button>
+                            </div>
+                            <div class="pull-left ms-4">
+                                <svg width="32" height="32" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8.97266" y="4.88281" width="2.28035" height="26.7395" fill="#F58220"/>
+                        <ellipse cx="10.0772" cy="2.6352" rx="2.50103" ry="2.6352" fill="#F58220"/>
+                        <path d="M0 35.7301C0 32.905 2.29024 30.6147 5.11539 30.6147H26.8831C29.7082 30.6147 31.9985 32.905 31.9985 35.7301H0Z" fill="#F58220"/>
+                        <rect x="9.70898" y="5.27026" width="13.0201" height="14.6486" fill="#F58220"/>
+                        <path d="M25.011 15.1707V10.1533H31.9991L29.7188 17.5164L31.9991 24.6469H18.1699V22.0117C21.9481 22.0117 25.011 18.9489 25.011 15.1707Z" fill="#F58220"/>
+                        </svg>
+                            </div>
+
+                            <div class="est_year">
+                                <small>Year of Establishment</small>
+                                <div class="ms-2" style="overflow: hidden;">
+                                    <p class="number fw-700 fs-13">2</p>
+                                    <p class="number fw-700 fs-13 ms-2">0</p>
+                                    <p class="number fw-700 fs-13 ms-2">0</p>
+                                    <p class="number fw-700 fs-13 ms-2">6</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Brand & Contact End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-primary">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <nav class="navbar navbar-expand-lg  navbar-dark sticky-top py-lg-0 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse main_nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="./index.html" class="nav-link collapsed">Home</a>
+                            </li>
+                            <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a>
+                            <li class="nav-item">
+                                <a href="./about-us.html" class="nav-link collapsed">About Us</a>
+                            </li>
+                            <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a>
+                            <li class="nav-item">
+                                <a href="./campus.html" class="nav-link collapsed">Campus</a>
+                            </li>
+                            <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle collapsed">ACADEMICS</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item bottom-line-nav-bar"> Under Graduation &raquo; </a>
+                                        <ul class="submenu dropdown-menu">
+                                            <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="">B.Ed</a></li>
+                                            <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="">M.S.W</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item"> Post Graduation &raquo; </a>
+                                        
+                                    </li>
+                                </ul>
+                            </li>
+                            <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle collapsed">GALLERY</a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="https://www.harivandanacollege.org/gallery/2016-2017">2016-2017</a></li>
+                                    <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="https://www.harivandanacollege.org/gallery/2017-2018">2017-2018</a></li>
+                                    <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="https://www.harivandanacollege.org/gallery/2018-2019">2018-2019</a></li>
+                                    <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="https://www.harivandanacollege.org/gallery/2019-2020">2019-2020</a></li>
+                                    <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="https://www.harivandanacollege.org/gallery/2020-2021">2020-2021</a></li>
+                                    <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="https://www.harivandanacollege.org/gallery/2021-2022">2021-2022</a></li>
+                                    <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="https://www.harivandanacollege.org/gallery/2022-2023">2022-2023</a></li>
+                                    <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="https://www.harivandanacollege.org/gallery/2023-2024">2023-2024</a></li>
+                                    <li><a class="dropdown-item " href="https://www.harivandanacollege.org/gallery/2024-2025">2024-2025</a></li>
+                                </ul> -->
+                            </li>
+
+                            <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a>
+                            <li class="nav-item">
+                                <a href="" class="nav-link collapsed">Placement</a>
+                            </li>
+                            <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a>
+                            <li class="nav-item">
+                                <a href="./contact-us.html" class="nav-link active-bg">Contact Us</a>
+                            </li>
+                            <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a>
+                            <li class="nav-item">
+                                <a href="" class="nav-link collapsed">NIRF</a>
+                            </li>
+                            <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle collapsed">IQAC</a>
+                                <ul class="dropdown-menu">
+                                    <li class=""><a class="dropdown-item" href="">About IQAC  </a>
+                                    </li>
+                                    <li class=""><a class="dropdown-item" href="">Undertaking  </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a>
+
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-end main_nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item text-white">
+                                <a href="" target="_blank" class="nav-link collapsed">Staff Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
+    <script>
+    </script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
+    <script>
+    </script>
+    <!-- Contact Us Image Start -->
+    <div class="container-fluid bg-husky">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row content-comman-height">
+                    <div class="col-md-6 col-12 wow fadeInUp pt-5" data-wow-delay="0.1s">
+                        <h5 class="page-custom-title">Contact To</h5>
+                        <h5 class="page-custom-title">Kelavani Mandal</h5>
+                        <h6 class="page-custom-description">Want to get in touch? We’d love to hear from you. Here’s how you can reach us...</h6>
+                    </div>
+                    <div class="col-md-6 col-12 mv-center wow fadeInUp" data-wow-delay="0.1s">
+                        <img src="https://www.harivandanacollege.org/frontTheme/img/OBJECTS (1).png" alt="Logo" class="campus-logo-img contact-logo-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Us Image End -->
+
+    <!-- Contact Us Start -->
+    <div class="container-fluid pb-5 mt-n4">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row g-4">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="card contact-card-box p-5 radius-6">
+                            <div class="card-body">
+                                <img src="https://www.harivandanacollege.org/frontTheme/img/u_location-point.svg">
+                                <h5 class="contact-us-page mt-3">Postal Address</h5>
+                                <h6 class="contact-us-page-description">
+                                    <p>Kelavani Mandal Dhasa<br /> </p>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="card contact-card-box p-4 radius-6">
+                            <div class="card-body">
+                                <img src="https://www.harivandanacollege.org/frontTheme/img/u_calling.svg">
+                                <h5 class="contact-us-page mt-3"><a href="tel:0281 - 2575594" style="color: #424242;">0281 - 2575594</a></h5>
+                                <hr class="hr-line-style my-4">
+                                <img src="https://www.harivandanacollege.org/frontTheme/img/u_envelope.svg">
+                                <h5 class="contact-us-page mt-3"><a href="mailto:info@harivandanacollege.org" style="color: #424242;"></a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="card contact-card-box p-5 radius-6">
+                            <div class="card-body">
+                                <img src="https://www.harivandanacollege.org/frontTheme/img/u_whatsapp.svg">
+                                <h5 class="contact-us-page mt-3"><a href="tel:+91-99781-55555" style="color: #424242;">+91-9999999999</a></h5>
+                                <h6 class="contact-us-page-description pe-5">Chact with a member of our in-house team.</h6>
+                                <a href="https://wa.me/+91-99781-55555" class="btn btn-primary text-white fw-700 fs-14 l-h-24">START CHAT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Us End -->
+
+    <div class="container-fluid pb-5 mt-n4">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row g-4">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="card contact-us-card-box radius-6">
+                            <div class="card-body">
+                                <h5 class="text-gray fw-600 fs-20 mb-0">Get In Touch</h5>
+                                <!-- Success message -->
+                                <form method="POST" action="https://www.harivandanacollege.org/contact-us" accept-charset="UTF-8" id="contactUSForm" enctype="multipart/form-data"><input name="_token" type="hidden" value="fDrlEABq04vv0RdAyUznEzDyTkr4J0zdMDWfm8DO">
+                                    <input type="hidden" name="_method" value="POST">
+                                    <div class="row">
+
+                                        <div class="col-md-12 col-sm-12 col-12 form-group">
+                                            <label class="contact-us-page-label">Name: </label><span class="text-danger">*</span>
+                                            <input class="form-control" placeholder="Enter Name" name="name" type="text">
+                                        </div>
+
+
+                                        <div class="col-md-12 col-sm-12 col-12 form-group">
+                                            <label class="contact-us-page-label">Email: </label><span class="text-danger">*</span>
+                                            <input class="form-control" placeholder="Enter Email" name="email" type="email">
+                                        </div>
+
+
+                                        <div class="col-md-12 col-sm-12 col-12 form-group">
+                                            <label class="contact-us-page-label">Phone Number: </label><span class="text-danger">*</span>
+                                            <input class="form-control" placeholder="Enter Phone Number" name="phone_number" type="text">
+                                        </div>
+
+
+                                        <div class="col-md-12 col-sm-12 col-12 form-group">
+                                            <label class="contact-us-page-label">Subject: </label><span class="text-danger">*</span>
+                                            <input class="form-control" placeholder="Enter Subject" name="subject" type="text">
+                                        </div>
+
+
+                                        <div class="col-md-12 col-sm-12 col-12 form-group">
+                                            <label class="contact-us-page-label">Description: </label><span class="text-danger">*</span>
+                                            <textarea class="form-control" rows="3" cols="50" spellcheck="false" placeholder="Enter Decription" name="description"></textarea>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row justify-content-center mb-2 mt-3">
+                                        <div class="col-md-4">
+                                            <button class="btn btn-primary g-recaptcha" tabindex="4" data-sitekey="6LcuAn0pAAAAANNS0NN5nPYRj9CFpveyPIpJLRr5" data-callback="onSubmit" data-action="submit"><i class="fa fa-save"></i> Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="card contact-us-card-box radius-6">
+                            <iframe style="width:100%; height: 400px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="modal admission-inquiry" id="myModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Admission Inquiry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="https://www.harivandanacollege.org/admission-inquiry" accept-charset="UTF-8" class="form-class"><input name="_token" type="hidden" value="fDrlEABq04vv0RdAyUznEzDyTkr4J0zdMDWfm8DO">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-group">
+                                    <label for="full_name" class="form-label">Full Name</label>
+                                    <input placeholder="Enter here" class="form-control name" name="full_name" type="text" value="" id="full_name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-group">
+                                    <label for="cource" class="form-label">Cource</label>
+                                    <select class="form-control form-select" name="cource_id"><option value="" selected="selected">Select Cource</option><option value="21">B.C.A.</option><option value="3">B.Sc. (IT)</option><option value="4">M.Sc. (IT &amp; CA)</option><option value="6">B.Com.</option><option value="7">M.Com.</option><option value="8">B.B.A.</option><option value="9">B.Sc. Chemistry</option><option value="10">B.Sc. Microbiology</option><option value="11">B.Sc. Physics</option><option value="12">B.Sc. Industrial Chemistry</option><option value="13">B.Sc. Mathematics</option><option value="14">M.Sc. Chemistry</option><option value="15">LL.B.</option><option value="17">B.Ed.</option><option value="18">B.P.T.</option><option value="19">D.M.L.T.</option><option value="20">M.S.W.</option></select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="form-group">
+                                    <label for="mobile_number" class="form-label">Mobile Number</label>
+                                    <input placeholder="Enter here" class="form-control name" name="mobile_number" type="number" value="" id="mobile_number">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input placeholder="Enter here" class="form-control name" name="email" type="email" value="" id="email">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-primary" name="">
+                </div>
+            </div>
+            </form>
+        </div>
+    </div> -->
+
+    <div class="sticky-social-icon">
+        <a class="mt-n3" href="https://www.facebook.com/HarivandanaCollege"> <img src="https://www.harivandanacollege.org/frontTheme/img/facebook.png" class="social-media-icon"> </a>
+        <a class="mt-n3" href="https://www.instagram.com/harivandana_college_official/?igshid=cxhvxneuloss"> <img src="https://www.harivandanacollege.org/frontTheme/img/instagram.png" class="social-media-icon"> </a>
+        <a class="mt-n3" href="https://www.youtube.com/channel/UC4RAvm5ukle08pQngkPT-8Q"> <img src="https://www.harivandanacollege.org/frontTheme/img/youtube.png" class="social-media-icon"> </a>
+    </div>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark-black text-body footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row justify-content-center py-5">
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-12 ">
+                        <h5 class="mb-4 text-white fw-600 fs-18 l-h-31">Quick Links</h5>
+                        <a class="footer-text" href="https://www.ugc.gov.in/">UGC</a><br>
+                        <a class="footer-text" href="https://nptel.ac.in/">Nptel</a><br>
+                        <a class="footer-text" href="https://sdgs.un.org/goals">UN-SDG</a><br>
+                        <a class="footer-text" href="https://swayam.gov.in/">Swayam</a><br>
+                        <a class="footer-text" href="https://inflibnet.ac.in/">Inflibnet</a><br>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-12 ">
+                        <h5 class="mb-4 text-white fw-600 fs-18 l-h-31">Committees & Cells</h5>
+                        <a class="footer-text" href="">IQAC</a><br>
+                        <a class="footer-text" href="">Grievance Redressal</a><br>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-12">
+                        <h5 class="mb-4 text-white fw-600 fs-18 l-h-31">Privacy Policy</h5>
+                        <a class="footer-text" href="">Privacy Policy</a><br>
+                        <a class="footer-text" href="">Disclaimer Policy</a><br>
+                        <a class="footer-text" href="">Gravience Policy</a><br>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <h5 class="mb-4 text-white fw-600 fs-18 l-h-31">Contact us</h5>
+                        <p>
+                            <a href="" class="footer-text">
+                                <p>Kelavani Mandal Dhasa<br /></p>
+                            </a>
+                        </p>
+                        <p class="mt-4"><a href="tel:+91-99781-55555" class="text-white fw-500 l-h-24"><img src="./frontTheme/img/phone.svg"> Helpline :</a></p>
+                        <p><a href="mailto:info@harivandanacollege.org" class="text-primary fw-500 l-h-24 ms-1R"><img src="./frontTheme/img/email.svg" class="me-2"></a></p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <h5 class="mb-4 text-white fw-600 fs-18 l-h-31">SOCIAL MEDIA</h5>
+                        <div class="d-flex mb-4">
+                            <a class="mt-n3" href="https://www.facebook.com/HarivandanaCollege"> <img src="https://www.harivandanacollege.org/frontTheme/img/facebook.png" class="social-media-icon"> </a>
+                            <a class="mt-n3" href="https://www.instagram.com/harivandana_college_official/?igshid=cxhvxneuloss"> <img src="https://www.harivandanacollege.org/frontTheme/img/instagram.png" class="social-media-icon"> </a>
+                            <a class="mt-n3" href="https://www.youtube.com/channel/UC4RAvm5ukle08pQngkPT-8Q"> <img src="https://www.harivandanacollege.org/frontTheme/img/youtube.png" class="social-media-icon"> </a>
+                        </div>
+                        <h5 class="text-white fw-600 fs-18 l-h-31">Visitor Counter</h5>
+                        <div class="d-flex">
+                            <p class="visiter-count-box">4</p>
+                            <p class="visiter-count-box">2</p>
+                            <p class="visiter-count-box">6</p>
+                            <p class="visiter-count-box">1</p>
+                            <p class="visiter-count-box">5</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <p class="text-spenish-gray fw-500 fs-13">This Week</p>
+                                <h6 class="text-white fw-700 l-h-22 mt-n2">1250</h6>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <p class="text-spenish-gray fw-500 fs-13">This Month</p>
+                                <h6 class="text-white fw-700 l-h-22 mt-n2">25545</h6>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid copyright bg-gray py-4">
+        <div class="row pt-1">
+            <div class="col-md-12 text-center">
+                <h6 class="footer-text">Copyright © 2024, All right reserved Kelavani Mandal.</h6>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Back to Top -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.harivandanacollege.org/frontTheme/lib/wow/wow.min.js"></script>
+    <script src="https://www.harivandanacollege.org/frontTheme/lib/easing/easing.min.js"></script>
+    <script src="https://www.harivandanacollege.org/frontTheme/lib/waypoints/waypoints.min.js"></script>
+    <script src="https://www.harivandanacollege.org/frontTheme/lib/counterup/counterup.min.js"></script>
+    <script src="https://www.harivandanacollege.org/frontTheme/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://www.harivandanacollege.org/frontTheme/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="https://www.harivandanacollege.org/frontTheme/js/main.js"></script>
+
+    <!-- calener script -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+
+    <!-- nav bar -->
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+
+            /////// Prevent closing from click inside dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(function(element) {
+                element.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                });
+            })
+
+            // make it as accordion for smaller screens
+            if (window.innerWidth < 992) {
+
+                // close all inner dropdowns when parent is closed
+                document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown) {
+                    everydropdown.addEventListener('hidden.bs.dropdown', function() {
+                        // after dropdown is hidden, then find all submenus
+                        this.querySelectorAll('.submenu').forEach(function(everysubmenu) {
+                            // hide every submenu as well
+                            everysubmenu.style.display = 'none';
+                        });
+                    })
+                });
+
+                document.querySelectorAll('.dropdown-menu a').forEach(function(element) {
+                    element.addEventListener('click', function(e) {
+
+                        let nextEl = this.nextElementSibling;
+                        if (nextEl && nextEl.classList.contains('submenu')) {
+                            // prevent opening link if link needs to open dropdown
+                            e.preventDefault();
+                            console.log(nextEl);
+                            if (nextEl.style.display == 'block') {
+                                nextEl.style.display = 'none';
+                            } else {
+                                nextEl.style.display = 'block';
+                            }
+
+                        }
+                    });
+                })
+            }
+        });
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcuAn0pAAAAANNS0NN5nPYRj9CFpveyPIpJLRr5"></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("contactUSForm").submit();
+        }
+    </script>
+
+
+</body>
+
+</html>
