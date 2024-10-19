@@ -7,13 +7,13 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    <meta name="csrf-token" content="MZ84tXfRKpw29vZW2ZOehopLEef4P2ZQMJO3zSym">
+    <meta name="csrf-token" content="yEJBtYQ2gKZPFzo34FR0eX84T30OpmdtXRCWYFvR">
 
     <!-- Favicon -->
-    <link href="./frontTheme/img/logo_main-removebg-preview.png" rel="icon">
+    <link href="../frontTheme/img/logo_main-removebg-preview.png" rel="icon">
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https:/    /fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
@@ -22,15 +22,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="./frontTheme/lib/animate/animate.min.css" rel="stylesheet">
-    <link href="./frontTheme/lib/owlcarousel/assets/owl.carousel.min.css " rel="stylesheet">
-    <link href="./frontTheme/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="../frontTheme/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../frontTheme/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../frontTheme/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="./frontTheme/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../frontTheme/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="./frontTheme/css/style.css" rel="stylesheet">
+    <link href="../frontTheme/css/style.css" rel="stylesheet">
 
     <!-- icon cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -45,14 +45,33 @@
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
     <!-- Sweet Alert  End--->
     <style type="text/css">
-        /*    .about-description-left {
-        padding-left: 6% !important;
-    }
-    .about-description-right {
-        padding-right: 6% !important;
-    }*/
+        .admission-inquiry label {
+            margin-bottom: 0px;
+            color: #3a3a3a;
+            font-weight: bold;
+        }
+
+        .admission-inquiry .modal-dialog {
+            max-width: 650px;
+        }
+
+        .admission-inquiry .modal-dialog .modal-content {
+            background-color: rgba(255, 255, 255, 0.7);
+            background-image: url('./frontTheme/img/hvc-logo-light.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .highlighter a {
+            color: black;
+        }
+
+        .event-registration {
+            border-radius: 10px;
+            padding: 30px;
+            min-height: 380px
+        }
     </style>
-    <link rel="stylesheet" type="text/css" href="./frontTheme/css/about.css">
 </head>
 
 <body>
@@ -151,8 +170,8 @@
             <div class="col-md-10">
                 <div class="row align-items-center top-bar">
                     <div class="col-lg-4 col-md-12 text-center text-lg-start">
-                        <a href="./index.html" class="navbar-brand m-0 p-0">
-                            <img src="./frontTheme/img/logo_main.jpeg" alt="Logo" style="height: 120px;">
+                        <a href="" class="navbar-brand m-0 p-0">
+                        <img src="../frontTheme/img/logo_main.jpeg" alt="Logo"  style="height: 120px;">
                     </a>
                     </div>
                     <div class="col-lg-8 col-md-7 d-none d-lg-block text-end">
@@ -199,33 +218,32 @@
                     <div class="collapse navbar-collapse main_nav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="./index.html" class="nav-link collapsed">Home</a>
+                                <a href="../index.html" class="nav-link collapsed">Home</a>
                             </li>
                             <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a>
                             <li class="nav-item">
-                                <a href="./about-us.html" class="nav-link collapsed">About Us</a>
+                                <a href="../about-us.html" class="nav-link collapsed">About Us</a>
                             </li>
                             <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a>
                             <li class="nav-item">
-                                <a href="./campus.html" class="nav-link active-bg">Campus</a>
+                                <a href="../campus.html" class="nav-link collapsed">Campus</a>
                             </li>
                             <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle collapsed">ACADEMICS</a>
+                                <a class="nav-link dropdown-toggle active-bg">ACADEMICS</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item bottom-line-nav-bar"> Under Graduation &raquo; </a>
                                         <ul class="submenu dropdown-menu">
-                                            <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="./courses/bed.html">B.Ed</a></li>
-                                            <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="./courses/ba.html">B.A</a></li>
-                                           
+                                            <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="./bed.html">B.Ed</a></li>  
+                                            <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="./ba.html">B.A</a></li>
                                         </ul>
                                     </li>
                                     <li><a class="dropdown-item"> Post Graduation &raquo; </a>
                                         <ul class="submenu dropdown-menu">
-                                            
-                                            <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="./courses/msw.html">M.S.W</a></li>
+                                            <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="./msw.html">M.S.W</a></li>
                                         </ul>
+                                        
                                     </li>
                                 </ul>
                             </li>
@@ -252,13 +270,13 @@
                             </li>
                             <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a>
                             <li class="nav-item">
-                                <a href="./contact-us.html" class="nav-link collapsed">Contact Us</a>
+                                <a href="../contact-us.html" class="nav-link collapsed">Contact Us</a>
                             </li>
-                            <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a>
-                            <!-- <li class="nav-item">
-                                <a href="" class="nav-link collapsed">NIRF</a>
-                            </li> -->
                             <!-- <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a> -->
+                            <!-- <li class="nav-item">
+                                <a href="https://www.harivandanacollege.org/nirf" class="nav-link collapsed">NIRF</a>
+                            </li> -->
+                            <a class="nav-link text-secondary dis-md-none nav-link-dash">|</a>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle collapsed">IQAC</a>
                                 <ul class="dropdown-menu">
@@ -288,158 +306,251 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
     <script>
     </script>
-    <!-- campus Image Start -->
-    <div class="container-fluid bg-husky">
-        <div class="row justify-content-center">
+    <!-- Course Start -->
+    <div class="container-fluid bg-height" style="position: relative; background-image: url(../uploads/course/banner1.jpg); background-size: cover; background-position: center; height: 650px ;">
+        <div class="row justify-content-center bg-height">
             <div class="col-md-10">
                 <div class="row content-comman-height">
                     <div class="containt-text-center">
-                        <div class="col-md-8 col-12 wow fadeInUp" data-wow-delay="0.1s">
-                            <h5 class="page-custom-title">An Educational Institute</h5>
-                            <h5 class="page-custom-title">You can Rely on</h5>
-                            <h6 class="page-custom-description">A Degree From A Kelavani Mandal College Is About What You Do On The One Hand, And Who You Are On The Other. That Changes Everything. Starting With You.</h6>
-                        </div>
-                        <div class="col-md-4 col-12 wow fadeInUp mv-center" data-wow-delay="0.1s">
-                            <img src="./frontTheme/img/Group.png" alt="Logo" class="content-comman-image">
+                        <div class="col-md-6 col-12 bottom-box wow fadeInUp bg-primary" data-wow-delay="0.1s" style="border-radius: 6px;">
+                            <h5 class="page-custom-title text-white" style="padding: 15px 30px 0px 30px !important;">B.Ed.</h5>
+                            <h6 class="page-custom-description text-white fs-20" style="padding: 0px 30px 15px 30px !important;">Bachelor of Education</h6>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- campus Image End -->
+    <!-- Course End -->
 
-    <!-- campus Start -->
-    <div class="container-fluid my-4">
-        <div class="row justify-content-center">
-            <div class="col-md-10 pb-4">
-                <div class="row mt-5">
-                    <div class="col-md-5 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0.1s">
-                        <img src="./uploads/campus/campus1.jpeg" alt="Logo" class="campus-img ">
-                    </div>
-                    <div class="col-md-7 col-sm-12 col-12 wow fadeInUp pt-2 ps-5" data-wow-delay="0.1s">
-                        <h5 class="campus-page-title">CAMPUS</h5>
-                        <div class="row mt-4">
-                            <div class="col-md-12" style="display: flex;">
-                                <img src="./frontTheme/img/double Brecket.svg" alt="Logo" class="campus-colon-img">
-                                <div class="campus-page-discription ps-4 text-justify">
-                                    <p>The Institute is located at Dhasa. The Institute has a beautiful lush green campus with ecofriendly environment. The campus is packed up with different types of
-                                        facilities. Our buildings are huge and live. You can feel fresh breezes and can feel the calmness with soothing nature where birds keep on chirping and trees and plants start talking with you. We have enough facilities,
-                                        infrastructure and public spaces to make it a unique and welcoming destination to inspire our staff, students and local community. We keep on updating our campus by various art and crafts and feel good designs.
-                                        You will find traditionally decorated walls which carry our culture and proud of heritage. You will see the birds residing in beautiful nests specially made for them from the clay pots. Rather than focusing on mechanics,
-                                        we believe to chill in the lap of nature. But but but, that doesn&rsquo;t mean we don&rsquo;t believe in technology and machines. Check out more for laboratories, tech equipped classes and the arsenal we commonly
-                                        call Library!&nbsp;</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="mt-5" style="border: 1px solid #D7E4FA;">
-                <div class="row mt-5">
-                    <div class="col-md-7 col-sm-12 col-12 wow fadeInUp pt-2 pe-5" data-wow-delay="0.1s">
-                        <h5 class="campus-page-title">COMPUTER LAB</h5>
-                        <div class="row mt-4">
-                            <div class="col-md-12" style="display: flex;">
-                                <img src="./frontTheme/img/double Brecket.svg" alt="Logo" class="campus-colon-img">
-                                <div class="campus-page-discription ps-4 text-justify">
-                                    <p>Gadgets are an inseparable part of our life in this era. Computers have their primary and secondary roles in any type of institution nowadays. Computer labs are available for instructional, drop-in, and training use.
-                                        Other departments and units have computer labs that are available for campus-wide use. We have a well-equipped air-conditioned computer lab with the latest configuration housing 10 computers. Lab computer platforms
-                                        include Windows and Unix (Linux). Capacity in computer labs ranges from 8 to 48 workstations, and the locations are distributed throughout the campus. In some locations, computer labs are equipped with specialized
-                                        instructional technology equipment such as HD data projectors and scanners. Most of the labs are staffed with properly trained faculties.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0.1s">
-                        <img src="./uploads/campus/computerlab.jpeg " alt="Logo" class="campus-img campus-img-height campus-img-right">
-                    </div>
-                </div>
-                <hr class="mt-5" style="border: 1px solid #D7E4FA;">
-                <div class="row mt-5">
-                    <div class="col-md-5 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0.1s">
-                        <img src="./uploads/campus/sciencelab.jpeg" alt="Logo" class="campus-img campus-img-height">
-                    </div>
-                    <div class="col-md-7 col-sm-12 col-12 wow fadeInUp pt-2 ps-5" data-wow-delay="0.1s">
-                        <h5 class="campus-page-title">SCIENCE LAB</h5>
-                        <div class="row mt-4">
-                            <div class="col-md-12" style="display: flex;">
-                                <img src="./frontTheme/img/double Brecket.svg" alt="Logo" class="campus-colon-img">
-                                <div class="campus-page-discription ps-4 text-justify">
-                                    <p>Robert Heinlein once said, &#39;Everything is theoretically impossible until it is done.&#39; For making things happen in practice, for shaping our science think tanks, we have 6 well-equipped Science Laboratories with
-                                        the latest instruments, specimens, charts, etc., handled by highly qualified staff to expand scientific knowledge with real experiments. We have well-maintained laboratories for Physics, Chemistry, Industrial Chemistry,
-                                        and Botany. Students are encouraged to use these laboratories to learn through experiments as it is the first and foremost necessity of the field.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="mt-5" style="border: 1px solid #D7E4FA;">
-                <div class="row mt-5">
-                    <div class="col-md-7 col-sm-12 col-12 wow fadeInUp pt-2 pe-5" data-wow-delay="0.1s">
-                        <h5 class="campus-page-title">LIBRARY</h5>
-                        <div class="row mt-4">
-                            <div class="col-md-12" style="display: flex;">
-                                <img src="./frontTheme/img/double Brecket.svg" alt="Logo" class="campus-colon-img">
-                                <div class="campus-page-discription ps-4 text-justify">
-                                    <p>Not us but Albert Einstein himself said that the only thing that you absolutely have to know is the location of the library. The library plays the role of an arsenal. The college library is a very important place for
-                                        students to work. The library doesn&rsquo;t only consist of academic books but is also armed with other books of literature. The modern collection is superbly stocked and is kept up to date with regular purchases.
-                                        Undergraduates can find books to make their concepts rock solid, and postgraduates can find suitable books for their research or taught courses. Our treasure contains 16,000+ books of various fields which can be
-                                        helpful in academics and in general as well.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0.1s">
-                        <img src="./uploads/campus/libarary.jpeg" alt="Logo" class="campus-img campus-img-height campus-img-right">
-                    </div>
-                </div>
-                <hr class="mt-5" style="border: 1px solid #D7E4FA;">
-                <div class="row mt-5">
-                    <div class="col-md-5 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0.1s">
-                        <img src="./uploads/campus/readingroom.jpeg" alt="Logo" class="campus-img campus-img-height">
-                    </div>
-                    <div class="col-md-7 col-sm-12 col-12 wow fadeInUp pt-2 ps-5" data-wow-delay="0.1s">
-                        <h5 class="campus-page-title">READING AREA</h5>
-                        <div class="row mt-4">
-                            <div class="col-md-12" style="display: flex;">
-                                <img src="./frontTheme/img/double Brecket.svg" alt="Logo" class="campus-colon-img">
-                                <div class="campus-page-discription ps-4 text-justify">
-                                    <p>We provide a unique reading environment for the knowledge seekers in the college. It is well equipped with physical as well as digital reading material for the readers. It is the area where readers and knowledge seekers
-                                        can find their inner best under peaceful environment. Students of IT, Commerce, Science, Medicine, Law, Education and Social Work and even faculties from different departments are availing the benefits of this facility.
-                                        We are well equipped with an E Library as well where modern aspects of reading, research and analytics can be promoted.</p>
+    <!-- Placement Info Start -->
+    <div class="container-fluid my-5">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-10 pb-3 mt-5">
+                <div class="row radius-6">
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h6 class="course-page-title">About Course</h6>
+                        <div class="course-page-description px-4 pt-4 pb-2 bg-blue-shutter text-justify">
+                            <p>Shri Kelavani Mandal offers a Bachelor of Education (B.Ed.) program, equipping 
+                                individuals with the necessary skills and knowledge to excel in the teaching profession. This 
+                                two-year program caters to graduates seeking qualification to teach at the school level. </p>
 
-                                    <p>&nbsp;</p>
-                                </div>
+                            <p><span style="color:#c0392b"><strong>Curriculum:</strong></span></p>
+
+                            <p>The B.Ed. curriculum at Shri Kelavani Mandal blends theoretical knowledge with practical 
+                                experience. It covers a range of subjects like:</p>
+
+                            <ul>
+                                <li><span style="color:#f39c12"><strong>Foundational Courses:</strong></span>&nbsp;Philosophy of Education, Educational Psychology, Curriculum Development and Evaluation</li>
+                                <li><span style="color:#f39c12"><strong>Pedagogical Skills:</strong></span>&nbsp;Teaching Methodology, Classroom Management, ICT in Education</li>
+                                <li><span style="color:#f39c12"><strong>Subject-Specific Pedagogy:</strong></span>&nbsp;Focuses on effective teaching strategies for chosen 
+                                    subjects like as Gujarati, Hindi, Sanskrit, English, Mathematics, Science, Social 
+                                    Science, Accountancy and Economics. </li>
+                            </ul>
+
+                            <p><span style="color:#c0392b"><strong>Practical Exposure:</strong></span></p>
+
+                            <p>The program emphasizes practical exposure through internships in schools, allowing students 
+                                to apply theoretical knowledge in real-world classroom settings. This practical component 
+                                hones their teaching skills and fosters confidence in classroom management. </p>
+
+                            <p><span style="color:#c0392b"><strong>Eligibility:</strong></span></p>
+
+                            <p>To be eligible for the B.Ed. program at Shri Kelavani Mandal, candidates must possess a 
+                                Bachelor's degree from a recognized university with a minimum percentage of marks (criteria 
+                                may vary based on category).</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h6 class="course-page-title">Why B.Ed. Course ?</h6>
+                        <div class="course-page-description px-4 pt-4 pb-2 bg-blue-shutter text-justify">
+                            <p><span style="color:#c0392b"><strong>Career Prospects:</strong></span></p>
+
+                            <p>Upon successful completion of the B.Ed. program, graduates can pursue rewarding careers in 
+                                various educational institutions, including: </p>
+
+                            <ul>
+                                <li><span style="color:#8e44ad">Primary and Secondary Schools</span></li>
+                                <li><span style="color:#8e44ad">Special Needs Schools</span></li>
+                                <li><span style="color:#8e44ad">Coaching Institutes</span></li>
+                                <li><span style="color:#8e44ad">Educational Technology Companies</span></li>
+                            </ul>
+
+                            <p><span style="color:#f39c12"><strong>Teacher Training and Development:</strong></span></p>
+
+                            <p>Shri Kelavani Mandal's B.Ed. program aims to develop well-rounded educators with a 
+                                passion for teaching and a commitment to student growth. The program equips them with the 
+                                necessary skills to navigate the dynamic world of education and contribute significantly to 
+                                shaping future generations. 
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 radius-6">
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div style="border-left: 6px solid #2672B2;">
+                            <h6 class="course-page-title ps-4">Course Duration And NEP 2020 Format</h6>
+                            <div class="course-page-description ps-4 text-justify">
+                                <p>4 Semesters</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div style="border-left: 6px solid #2672B2;">
+                            <h6 class="course-page-title ps-4">Fees Structure</h6>
+                            <div class="course-page-description ps-4 text-justify">
+                                <p>Fee Structure as on Academic Year 2024-25 (As per F.R.C.)</p>
+
+                                <p>Sem-1: Rs.16,500/- </p>
+
+                                <p>Sem-2: Rs. 16,500/- </p>
+
+                                <p>Sem-3: Rs. 16,500/- </p>
+
+                                <p>Sem-4: Rs. 16,500/- </p>
+
+            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+                        <div style="border-left: 6px solid #2672B2;">
+                            <h6 class="course-page-title ps-4">After This Course</h6>
+                            <div class="course-page-description ps-4 text-justify">
+                                <p>Equipping you to become a skilled and passionate educator, the B.Ed. program at Shri 
+                                    Kelavani Mandal opens doors to a diverse range of fulfilling opportunities. Here's a glimpse 
+                                    into what awaits you upon successful completion of the course:</p>
+
+                                <p><span style="color:#c0392b"><strong>1. Rewarding Careers in Education (Government &amp; Private):</strong></span></p>
+
+                                <ul>
+                                    <li><strong><span style="color:#f39c12">Government Schools</span>:</strong>&nbsp; You can qualify for positions as teachers in government schools 
+                                        through exams conducted by State Level School Recruitment Boards. These positions offer job 
+                                        security, competitive salaries, and the satisfaction of contributing to public education.  </li>
+                                    <li><span style="color:#f39c12"><strong>Private Schools:</strong></span>&nbsp; The ever-expanding network of private schools presents a multitude of 
+                                        teaching opportunities. Your B.Ed. qualification, combined with strong communication and 
+                                        subject-matter expertise, makes you a valuable asset to these institutions. </li>
+                                </ul>
+
+                                <p><span style="color:#c0392b"><strong>2. Higher Education and Research:</strong></span></p>
+
+                                <ul>
+                                    <li><span style="color:#f39c12"><strong>M.Ed. Programs:</strong></span>&nbsp;  Pursue a Master's degree in Education, specializing in areas like Special 
+                                        Education, Educational Administration, or Educational Technology. This advanced qualification 
+                                        opens doors to teaching positions in universities, colleges, and research institutions.</li>
+                                    <li><span style="color:#f39c12"><strong>Teacher Training Institutes:</strong>&nbsp;</span> With experience and potential post-graduate qualifications, you 
+                                        can contribute to the education system by becoming a teacher trainer at government or private 
+                                        institutions. </li>
+                                </ul>
+
+                                <p><strong>3. <span style="color:#c0392b">Educational Entrepreneurship:</span></strong></p>
+
+                                <ul>
+                                    <li><span style="color:#f39c12"><strong>Coaching Centers and Tutorials:</strong>&nbsp;</span> : Leverage your knowledge and pedagogical skills to 
+                                        establish coaching centres or tutorials catering to students of various age groups. This path 
+                                        allows you to be your own boss and tailor your teaching approach.  </li>
+                                    <li><span style="color:#f39c12"><strong>Educational Content Development:</strong></span>&nbsp Create educational content like online courses, 
+                                        textbooks, or educational apps. This path combines your teaching expertise with the dynamism 
+                                        of the digital age. </li>
+                                </ul>
+
+                                <p><strong>4<span style="color:#c0392b">. Competitive Examinations:</span></strong></p>
+
+                                <ul>
+                                    <li><span style="color:#f39c12"><strong>National Eligibility Test (NET):</strong>&nbsp;</span> : Qualify for NET, a gateway to lectureships in universities and 
+                                        colleges across India. This exam assesses your subject knowledge and teaching aptitude.  </li>
+                                    <li><span style="color:#f39c12"><strong>Central Teacher Eligibility Test (CTET):</strong>&nbsp;</span> This exam allows you to teach in schools affiliated to 
+                                        the Central Board of Secondary Education (CBSE). It's a great option for aspiring teachers 
+                                        seeking diverse teaching opportunities.  </li>
+                                </ul>
+
+                                <p><strong>5. <span style="color:#c0392b">State and National Public Service Examinations:</span></strong></p>
+
+                                <p>Many state Public Service Commissions (PSCs) and the Union Public Service Commission 
+                                    (UPSC) conduct exams for positions like Educational Officer or Educational Administrator. A 
+                                    B.Ed. degree, along with strong analytical and communication skills, can equip you for these 
+                                    competitive exams, leading to fulfilling careers in the civil service sector. </p>
+
+                                <p>This is just a starting point – the B.Ed. qualification empowers you to explore various paths 
+                                    and make a significant impact in the field of education.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <hr class="mt-5" style="border: 1px solid #D7E4FA;">
-                <!-- <div class="row mt-5">
-                    <div class="col-md-7 col-sm-12 col-12 wow fadeInUp pt-2 pe-5" data-wow-delay="0.1s">
-                        <h5 class="campus-page-title">BUS SERVICE</h5>
-                        <div class="row mt-4">
-                            <div class="col-md-12" style="display: flex;">
-                                <img src="https://www.harivandanacollege.org/frontTheme/img/double Brecket.svg" alt="Logo" class="campus-colon-img">
-                                <div class="campus-page-discription ps-4 text-justify">
-                                    <p>Education is one of the powerful aspects in Women Empowerment which plays a significant role in developing her as a contributing citizen in the nation&#39;s prosperity. We provide free transportation to each and every
-                                        girl affiliated with Harivandana College to make their study easier. Distance has never been a barrier for us when it comes to educating a girl child. Not just a free transportation but we also provide biometric
-                                        attendance facility to them so that the parents of each and every girl can be updated about students&rsquo; whereabouts.</p>
-
-                                    <p>&nbsp;</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-sm-12 col-12 wow fadeInUp" data-wow-delay="0.1s">
-                        <img src="https://www.harivandanacollege.org/uploads/campus/1713859104_Untitled-1.jpg" alt="Logo" class="campus-img campus-img-height campus-img-right">
-                    </div>
-                </div> -->
-                <hr class="mt-5" style="border: 1px solid #D7E4FA;">
             </div>
         </div>
     </div>
-    <!-- campus End -->
+    <!-- Placement Info End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- College Ranker Start -->
+    <!-- <section class="carousel_se_01">
+        <div class="container-fluid py-5 bg-white-primary">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 wow fadeInUp pt-3" data-wow-delay="0.1s">
+                    <div class="ranker-heading pb-4">
+                        <h4 class="text-gray home-page-title text-center college-ranker-title">College Ranker</h4>
+                    </div>
+                    <div class="col-lg-12 wow fadeInUp mb-3" data-wow-delay="0.1s">
+                        <div class="owl-carousel owl-carousel-ranker carousel_se_01_carousel owl-theme">
+                            <div class="item">
+                                <div class="main_services">
+                                    <div class="carousel-item active">
+                                        <img src="https://www.harivandanacollege.org/uploads/ranker/1715143555_1_DER SUMITA LAKHAMANBHAI.jpg" class="ranker-image">
+                                        <p class="fw-600 fs-16 mt-3 l-h-20">DER SUMITA</p>
+                                        <p class="fw-500 fs-14 l-h-24">B.Ed.- Sem 1 : 1 Rank</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="main_services">
+                                    <div class="carousel-item active">
+                                        <img src="https://www.harivandanacollege.org/uploads/ranker/1715143580_2_TRIVEDI VAIBHAVI UPENDRABHAI.jpg" class="ranker-image">
+                                        <p class="fw-600 fs-16 mt-3 l-h-20">TRIVEDI VAIBHAVI</p>
+                                        <p class="fw-500 fs-14 l-h-24">B.Ed.- Sem 1 : 2 Rank</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="main_services">
+                                    <div class="carousel-item active">
+                                        <img src="https://www.harivandanacollege.org/uploads/ranker/1715143603_3_RAMANI HARSHA LALJIBHAI.jpg" class="ranker-image">
+                                        <p class="fw-600 fs-16 mt-3 l-h-20">RAMANI HARSHA</p>
+                                        <p class="fw-500 fs-14 l-h-24">B.Ed.- Sem 1 : 3 Rank</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="main_services">
+                                    <div class="carousel-item active">
+                                        <img src="https://www.harivandanacollege.org/uploads/ranker/1715143624_3_RATHOD RINKAL RAYDHANBHAI.jpg" class="ranker-image">
+                                        <p class="fw-600 fs-16 mt-3 l-h-20">RATHOD RINKAL</p>
+                                        <p class="fw-500 fs-14 l-h-24">B.Ed.- Sem 1 : 3 Rank</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- College Ranker End -->
 
 
     <!-- <div class="modal admission-inquiry" id="myModal" tabindex="-1">
@@ -450,7 +561,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form method="POST" action="https://www.harivandanacollege.org/admission-inquiry" accept-charset="UTF-8" class="form-class"><input name="_token" type="hidden" value="MZ84tXfRKpw29vZW2ZOehopLEef4P2ZQMJO3zSym">
+                    <form method="POST" action="https://www.harivandanacollege.org/admission-inquiry" accept-charset="UTF-8" class="form-class"><input name="_token" type="hidden" value="fIGr9cjOeecJsnJMcJdvl04RHFtQHbudi8KTwhS6">
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <div class="form-group">
@@ -487,9 +598,9 @@
     </div> -->
 
     <div class="sticky-social-icon">
-        <a class="mt-n3" href=""> <img src="./frontTheme/img/facebook.png" class="social-media-icon"> </a>
-        <a class="mt-n3" href=""> <img src="./frontTheme/img/instagram.png" class="social-media-icon"> </a>
-        <a class="mt-n3" href=""> <img src="./frontTheme/img/youtube.png" class="social-media-icon"> </a>
+        <a class="mt-n3" href=""> <img src="../frontTheme/img/facebook.png" class="social-media-icon"> </a>
+        <a class="mt-n3" href=""> <img src="../frontTheme/img/instagram.png" class="social-media-icon"> </a>
+        <a class="mt-n3" href=""> <img src="../frontTheme/img/youtube.png" class="social-media-icon"> </a>
     </div>
     <!-- Footer Start -->
     <!-- <div class="container-fluid bg-dark-black text-body footer pt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -519,11 +630,11 @@
                         <h5 class="mb-4 text-white fw-600 fs-18 l-h-31">Contact us</h5>
                         <p>
                             <a href="" class="footer-text">
-                                <p>Kelavani Mandal Dhasa<br /></p>
+                                <p>HARIVANDANA COLLEGE - RAJKOT<br /> Near Saurashtra University campus, Munjaka Road Rajkot.</p>
                             </a>
                         </p>
-                        <p class="mt-4"><a href="tel:+91-99781-55555" class="text-white fw-500 l-h-24"><img src="./frontTheme/img/phone.svg"> Helpline : </a></p>
-                        <p><a href="mailto:info@harivandanacollege.org" class="text-primary fw-500 l-h-24 ms-1R"><img src="./frontTheme/img/email.svg" class="me-2"></a></p>
+                        <p class="mt-4"><a href="tel:+91-99781-55555" class="text-white fw-500 l-h-24"><img src="https://www.harivandanacollege.org/frontTheme/img/phone.svg"> Helpline : +91-99781-55555</a></p>
+                        <p><a href="mailto:info@harivandanacollege.org" class="text-primary fw-500 l-h-24 ms-1R"><img src="https://www.harivandanacollege.org/frontTheme/img/email.svg" class="me-2">info@harivandanacollege.org</a></p>
                     </div>
                     <div class="col-lg-3 col-md-6 col-12">
                         <h5 class="mb-4 text-white fw-600 fs-18 l-h-31">SOCIAL MEDIA</h5>
@@ -560,7 +671,7 @@
     <div class="container-fluid copyright bg-gray py-4">
         <div class="row pt-1">
             <div class="col-md-12 text-center">
-                <h6 class="footer-text">Copyright © 2024, All right reserved Kelavani Mandal.</h6>
+                <h6 class="footer-text">Copyright © 2024, All right reserved Harivandana College.</h6>
             </div>
         </div>
     </div> -->
@@ -571,21 +682,19 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./frontTheme/lib/wow/wow.min.js"></script>
-    <script src="./frontTheme/lib/easing/easing.min.js"></script>
-    <script src="./frontTheme/lib/waypoints/waypoints.min.js"></script>
-    <script src="./frontTheme/lib/counterup/counterup.min.js"></script>
-    <script src="./frontTheme/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="./frontTheme/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="../frontTheme/lib/wow/wow.min.js"></script>
+    <script src="../frontTheme/lib/easing/easing.min.js"></script>
+    <script src="../frontTheme/lib/waypoints/waypoints.min.js"></script>
+    <script src="../frontTheme/lib/counterup/counterup.min.js"></script>
+    <script src="../frontTheme/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../frontTheme/lib/lightbox/js/lightbox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="./frontTheme/js/main.js"></script>
+    <script src="../frontTheme/js/main.js"></script>
 
     <!-- calener script -->
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
-
-
     <!-- nav bar -->
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function() {
@@ -630,6 +739,68 @@
                 })
             }
         });
+    </script>
+    <script type="text/javascript">
+        (function($) {
+
+            // College Ranker Owl Carousel
+            $(".carousel_se_01_carousel").owlCarousel({
+                items: 6,
+                nav: true,
+                loop: true,
+                mouseDrag: true,
+                autoplay: 3000,
+                responsiveClass: true,
+                navText: ["<i class='fas fa-long-arrow-alt-left text-dark-black'></i>", "<i class='fas fa-long-arrow-alt-right text-dark-black'></i>"],
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    480: {
+                        items: 2
+                    },
+                    767: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 6
+                    },
+                },
+            });
+
+            // Placement Company Owl Carousel
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                items: 4,
+                nav: true,
+                loop: true,
+                mouseDrag: true,
+                autoplay: 3000,
+                margin: 10,
+                responsiveClass: true,
+                navText: ["<i class='fas fa-less-than text-dark-black'></i>", "<i class='fas fa-greater-than text-dark-black'></i>"],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    480: {
+                        items: 1
+                    },
+                    767: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 4
+                    },
+                },
+            });
+        })(jQuery);
     </script>
 
 
