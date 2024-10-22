@@ -151,8 +151,8 @@
             <div class="col-md-10">
                 <div class="row align-items-center top-bar">
                     <div class="col-lg-4 col-md-12 text-center text-lg-start">
-                        <a href="./index.html" class="navbar-brand m-0 p-0">
-                            <img src="./frontTheme/img/logo_main.jpeg" alt="Logo" style="height: 120px;">
+                        <a href="" class="navbar-brand m-0 p-0">
+                        <img src="./frontTheme/img/logo_main.jpeg" alt="Logo"  style="height: 120px;">
                     </a>
                     </div>
                     <div class="col-lg-8 col-md-7 d-none d-lg-block text-end">
@@ -160,25 +160,8 @@
                             <div class="pull-left">
                                 <button class="btn btn-primary fw-700 fs-14 l-h-24" id="model">ADMISSION</button>
                             </div>
-                            <div class="pull-left ms-4">
-                                <svg width="32" height="32" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="8.97266" y="4.88281" width="2.28035" height="26.7395" fill="#F58220"/>
-                        <ellipse cx="10.0772" cy="2.6352" rx="2.50103" ry="2.6352" fill="#F58220"/>
-                        <path d="M0 35.7301C0 32.905 2.29024 30.6147 5.11539 30.6147H26.8831C29.7082 30.6147 31.9985 32.905 31.9985 35.7301H0Z" fill="#F58220"/>
-                        <rect x="9.70898" y="5.27026" width="13.0201" height="14.6486" fill="#F58220"/>
-                        <path d="M25.011 15.1707V10.1533H31.9991L29.7188 17.5164L31.9991 24.6469H18.1699V22.0117C21.9481 22.0117 25.011 18.9489 25.011 15.1707Z" fill="#F58220"/>
-                        </svg>
-                            </div>
+                           
 
-                            <div class="est_year">
-                                <small>Year of Establishment</small>
-                                <div class="ms-2" style="overflow: hidden;">
-                                    <p class="number fw-700 fs-13">2</p>
-                                    <p class="number fw-700 fs-13 ms-2">0</p>
-                                    <p class="number fw-700 fs-13 ms-2">0</p>
-                                    <p class="number fw-700 fs-13 ms-2">6</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -226,6 +209,8 @@
                                             
                                             <li><a class="dropdown-item  ? bottom-line-nav-bar : '' " href="./courses/msw.html">M.S.W</a></li>
                                         </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./courses/high-school.html"> High School</a> 
                                     </li>
                                 </ul>
                             </li>
@@ -275,6 +260,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
     <script>
     </script>
+   
     <!-- campus Image Start -->
     <div class="container-fluid bg-husky">
         <div class="row justify-content-center">
@@ -295,7 +281,85 @@
         </div>
     </div>
     <!-- campus Image End -->
+    <div class="slider mt-5">
+        <div class="list">
+            <div class="item">
+                <img src="./uploads/campus/highschool.jpeg" alt="image1">
+            </div>
+            <div class="item">
+                <img src="./uploads/campus/campus1.jpeg" alt="image2">
+            </div>
+            <div class="item">
+                <img src="./uploads/campus/campus2.jpeg" alt="image3">
+            </div>
+            <div class="item">
+                <img src="./uploads/campus/campus3.jpeg" alt="image4">
+            </div>
+            <div class="item">
+                <img src="./uploads/campus/campus4.jpeg" alt="image5">
+            </div>
+        </div>
+        <!--button prev and next-->
+        <div class="buttons">
+            <button id="prev"><</button>
+        <button id="next">></button>
+        </div>
+        <!--Dots (if 5 items => 5 dots)-->
+        <ul class="dots">
+           <li class="active"></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li> 
+        </ul>
+    </div>
+    <script src="thar.js"></script>
+    <script>
+        let list = document.querySelector('.slider .list');
+let items = document.querySelectorAll('.slider .list .item');
+let dots = document.querySelectorAll('.slider .dots li');
+let prev = document.getElementById('prev');
+let next = document.getElementById('next');
 
+let active = 0;
+let lengthitems = items.length - 1;
+
+next.onclick = function() {
+    if (active + 1 > lengthitems) {
+        active = 0;
+    } else {
+        active = active + 1;
+    }
+    reloadslider();
+}
+
+prev.onclick = function() {
+    if (active - 1 < 0) {
+        active = lengthitems;
+    } else {
+        active = active - 1;
+    }
+    reloadslider();
+}
+
+let autoslide = setInterval(() => { next.click(); }, 3000);
+
+function reloadslider() {
+    let checkleft = items[active].offsetLeft;
+    list.style.left = -checkleft + 'px';
+
+    let lastactiveDot = document.querySelector('.slider .dots li.active');
+    if (lastactiveDot) lastactiveDot.classList.remove('active');
+    dots[active].classList.add('active');
+}
+
+dots.forEach((li, key) => {
+    li.addEventListener('click', function() {
+        active = key;
+        reloadslider();
+    })
+})
+    </script>
     <!-- campus Start -->
     <div class="container-fluid my-4">
         <div class="row justify-content-center">
